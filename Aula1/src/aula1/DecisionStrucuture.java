@@ -14,6 +14,8 @@ public class DecisionStrucuture {
 		
 		n2 = entry.nextInt();
 		
+		entry.close();
+		
 		if (n1 > n2) {
 			System.out.println(n1 + " bigger than " + n2);
 		} else {
