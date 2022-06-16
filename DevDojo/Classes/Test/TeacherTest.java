@@ -13,5 +13,4 @@ public class TeacherTest {
 		System.out.println(teacher.name + " " + teacher.age + " " + teacher.sex);
 		
 	}
-
 }
