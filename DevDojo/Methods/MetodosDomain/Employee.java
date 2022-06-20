@@ -1,10 +1,39 @@
 package MetodosDomain;
 
 public class Employee {
-	public String name;
-	public int age;
-	public double[] sallary;
+	private String name;
+	private int age;
+	private double[] sallary;
+	private double average =0;
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public double[] getSallary() {
+		return sallary;
+	}
+
+	public void setSallary(double[] sallary) {
+		this.sallary = sallary;
+	}
+
+	public double getAverage() {
+		return average;
+	}
+
 	public void employConstruct() {
 		System.out.println("------------");
 		System.out.println(this.name);
@@ -23,8 +52,6 @@ public class Employee {
 			return;
 		}
 		
-		double average = 0;
-		
 		for(double i: sallary) {
 			average += i;
 		}
@@ -33,4 +60,6 @@ public class Employee {
 		System.out.println("Your sallary average is: "+ average);
 		
 	}
+	
+	
 }
