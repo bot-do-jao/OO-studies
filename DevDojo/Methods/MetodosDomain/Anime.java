@@ -6,8 +6,17 @@ public class Anime {
 	private int episodes;
 	private String genre;
 	private String studio;
+
+	{
+		System.out.println("Isso é um bloco de inicialização,");
+		System.out.println("qualquer coisa aqui é executada antes do construtor e métodos");
+	}
 	
-	//construtor
+	static {
+		System.out.println("Esse bloco é estatico, logo sera inicializado só uma vez");
+		System.out.println();
+	}
+	//Constructor
 	public Anime(String name, String type, int episodes, String genre) {
 		this.name = name;
 		this.type = type;
@@ -18,24 +27,24 @@ public class Anime {
 		this(name,type,episodes,genre);
 		this.studio = studio;
 	}
-	//also construtor
+	//also constructor
 	public Anime() {
 		
 	}
-	
+
 	public void init(String name, String type, int episodes) {
 		this.name = name;
 		this.type = type;
 		this.episodes = episodes;
 	}
 	//sobrecarga de metodos abaixo
-	
+
 	public void init(String name, String type, int episodes, String genre) {
 		this.init(name,type,episodes);
 		this.genre = genre;
 	}
-	
-	
+
+
 
 	public void construct(){
 		System.out.println(this.name);
@@ -43,10 +52,15 @@ public class Anime {
 		System.out.println(this.episodes);
 		System.out.println(this.genre);
 		System.out.println(this.studio);
-		
-		
+
+
 	}
-	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getType() {
 		return type;
 	}
@@ -59,18 +73,19 @@ public class Anime {
 	public void setEpisodes(int episodes) {
 		this.episodes = episodes;
 	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getgenre() {
+	public String getGenre() {
 		return genre;
 	}
-
-	public void setgenre(String genre) {
+	public void setGenre(String genre) {
 		this.genre = genre;
 	}
-	
+	public String getStudio() {
+		return studio;
+	}
+	public void setStudio(String studio) {
+		this.studio = studio;
+	}
+
+
+
 }
