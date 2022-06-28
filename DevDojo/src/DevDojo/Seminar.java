@@ -5,10 +5,6 @@ public class Seminar {
 	private Local local;
 	private Student[] students;
 	private Teacher teacher;
-
-	public Seminar(String subject) {
-		this.subject = subject;
-	}
 	
 	public Seminar(String subject, Local local) {
 		this.subject = subject;
@@ -41,7 +37,7 @@ public class Seminar {
 		}
 		if(teacher != null) {
 			System.out.println("Assigned teacher: " + teacher.getName());
-			System.out.println("Teacher's speacialty: " + teacher.getSpecialty());
+			System.out.println("Teacher's specialty: " + teacher.getSpecialty());
 		}
 	}
 	
