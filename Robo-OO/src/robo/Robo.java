@@ -38,6 +38,13 @@ public class Robo {
 		if(direcao == 360)
 			direcao = 0;
 	}
+
+	@Override
+	public String toString() {
+		return "Robo [ligado=" + ligado + "]";
+	}
+	
+	
 	/*
 	 * Exercicios:
 	 * (1) Escrever um construtor no qual o robo já e
