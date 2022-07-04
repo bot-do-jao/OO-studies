@@ -7,6 +7,7 @@ public class ProductTest {
 		
 		
 		TaxCalc.PcTaxCalculator(computer);
+		System.out.println("--------------");
 		TaxCalc.TomatoTaxCalculator(tomato);
 	}
 }

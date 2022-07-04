@@ -8,7 +8,7 @@ public class TaxCalc {
 		System.out.println("Pc name: "+ computer.getName());
 		System.out.println("Pc value: " + computer.getValue());
 		System.out.println("Taxes: "+ tax);
-		System.out.println("--------------");
+		
 	}
 	
 	public static void TomatoTaxCalculator(Tomato tomato) {
