@@ -13,5 +13,6 @@ public interface DataLoader {
 	
 	static void retrieveMaxDataSize() {
 		System.out.println("Here");
+		
 	}
 }
