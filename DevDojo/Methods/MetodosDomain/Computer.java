@@ -17,7 +17,7 @@ public class Computer extends Product {
 
 	@Override
 	public String toString() {
-		return "name: "+ name + "value: " + value;
+		return "name: "+ name + ". value: " + value;
 	}
 
 	
