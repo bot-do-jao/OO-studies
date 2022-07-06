@@ -8,6 +8,12 @@ public class ProductTest {
 		
 		TaxCalc.PcTaxCalculator(computer);
 		System.out.println("--------------");
-		TaxCalc.TomatoTaxCalculator(tomato);
+		TaxCalc.TomatoTaxCalculator(tomato);	
+		
+		Product pc = new Computer("Lenovo", 15000);
+		
+		System.out.println(pc);
+		System.out.println(pc.calcTaxes());
+		//polimorfismo me deixa pegar os atributos da classe pai direto, mas nao o contrario
 	}
 }

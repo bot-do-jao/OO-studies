@@ -15,6 +15,14 @@ public class Computer extends Product {
 		return this.value * TAX_PERCENT;
 	}
 
+	@Override
+	public String toString() {
+		return "name: "+ name + "value: " + value;
+	}
+
+	
+
+	
 	
 	
 }
